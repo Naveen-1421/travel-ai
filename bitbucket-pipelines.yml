@@ -1,0 +1,40 @@
+image: node:16.13.1
+
+pipelines:
+  custom:
+    dev:
+      - step:
+          name: Deploy to Dev Server
+          script:
+            # Install SSH client
+            - apt-get update && apt-get install -y openssh-client
+            
+            # Add server to known hosts (avoid manual confirmation)
+            - mkdir -p ~/.ssh
+            - ssh-keyscan -H $SSH_SERVER_IP >> ~/.ssh/known_hosts
+
+            # Authenticate with SSH key (stored in Bitbucket secret)
+            - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+            - chmod 600 ~/.ssh/id_rsa
+
+            # Pull latest code and restart service
+            - ssh -i ~/.ssh/id_rsa $SSH_SERVER_USER@$SSH_SERVER_IP '
+                cd /var/www/MLServiceLive &&
+                git pull &&
+                pm2 restart mlservices
+              '
+
+    prod:
+      - step:
+          name: Deploy to Production Server
+          script:
+            - apt-get update && apt-get install -y openssh-client
+            - mkdir -p ~/.ssh
+            - ssh-keyscan -H $SSH_SERVER_IP >> ~/.ssh/known_hosts
+            - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+            - chmod 600 ~/.ssh/id_rsa
+            - ssh -i ~/.ssh/id_rsa $SSH_SERVER_USER@$SSH_SERVER_IP '
+                cd /var/www/MLServiceLive &&
+                git pull &&
+                pm2 restart mlservices
+              '

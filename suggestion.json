@@ -1,0 +1,364 @@
+[
+  {
+    "query": "Sure thing!, Let's get started-just share the details, and I'll handle the rest.",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Absolutely!, Tell me what you need, and I'll help you book the perfect flight.",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Of course!, I've got you covered. Let's sort out the details together.",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Certainly!, Let's find the best flight options for you-just share the details!",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Definitely!, Ready to take off? 🚀 Let's get your booking sorted.",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Happy to help!, Let's look at your options and find the best flight for you.",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Great!, Are you booking a one-way trip or a round trip?",
+    "slot_name": "trip_type",
+    "slot_value": ["one way", "round trip"]
+  },
+  {
+    "query": "Got it!, Will this be a one-way journey or a roundtrip adventure?",
+    "slot_name": "trip_type",
+    "slot_value": ["one way", "round trip"]
+  },
+  {
+    "query": "Awesome!, Do you need a one-way ticket or a round trip? Let me know! 😊",
+    "slot_name": "trip_type",
+    "slot_value": ["one way", "round trip"]
+  },
+  {
+    "query": "Let's sort this out! Are you flying one-way or roundtrip?",
+    "slot_name": "trip_type",
+    "slot_value": ["one way", "round trip"]
+  },
+  {
+    "query": "Exciting!, Will this be a one-way escape or a roundtrip journey?",
+    "slot_name": "trip_type",
+    "slot_value": ["one way", "round trip"]
+  },
+  {
+    "query": "Got it!, Which travel class suits you best - economy, premium, business, or first class?",
+    "slot_name": "class_type",
+    "slot_value": ["economy", "premium", "business", "first class"]
+  },
+  {
+    "query": "Understood!, Would you like to fly economy, premium, business, or first class? 😊",
+    "slot_name": "class_type",
+    "slot_value": ["economy", "premium", "business", "first class"]
+  },
+  {
+    "query": "Great choice!, Now, which class do you prefer - economy, premium, business, or first?",
+    "slot_name": "class_type",
+    "slot_value": ["economy", "premium", "business", "first class"]
+  },
+  {
+    "query": "Let's make your journey comfortable!, Which class would you like - economy, premium, business, or first?",
+    "slot_name": "class_type",
+    "slot_value": ["economy", "premium", "business", "first class"]
+  },
+  {
+    "query": "Almost there!, Pick your preferred class: economy, premium, business, or first class.",
+    "slot_name": "class_type",
+    "slot_value": ["economy", "premium", "business", "first class"]
+  },
+  {
+    "query": "Great! When are you planning to take off? Please use MM/DD/YYYY format.",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  {
+    "query": "Sure! What's your departure date? Let's keep it in MM/DD/YYYY format.",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  {
+    "query": "Got it! Which date should I book your flight for? (Format: MM/DD/YYYY) 📅",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  {
+    "query": "Alright! When would you like to fly? Just drop the date in MM/DD/YYYY format.",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  {
+    "query": "Got it! What's your return date? (MM/DD/YYYY format, please!)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Sure! When will you be flying back? (MM/DD/YYYY format, please!)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Let's lock in your flight! What's your departure date? (MM/DD/YYYY format, please!)",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },{
+    "query": "Got it! What's your return date? (MM/DD/YYYY format, please!)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Just one more step! What date will you be checking out? (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Great! What's your return date? Let's keep it in MM/DD/YYYY format",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+ {
+    "query": "Just one more step! What date will you be checking out? (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query":  "Got it! When are you planning to return?Please use MM/DD/YYYY format.",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  }, 
+  {
+    "query": "Awesome! Let's lock in your return date. Just drop it in MM/DD/YYYY format.",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Sure! When are you planning to check in? (MM/DD/YYYY).",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  
+  {
+    "query": "Exciting! When will you be checking in? Let's get your stay sorted. (MM/DD/YYYY).",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+
+  {
+    "query": "Can't wait to find you the perfect stay! What's your check-in date? (MM/DD/YYYY).",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  {
+    "query": "Ready to settle in? Let me know when you'll be checking in. (MM/DD/YYYY).",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  {
+    "query": "Let's lock in your stay! What date will you be arriving? (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range1"]
+  },
+  {
+    "query": "Alright! When will you be checking out? (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Got it! What's your check-out date? (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Wrapping up your stay? Let me know your check-out date. (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Let's finalize your booking! When are you checking out? (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Just one more step! What date will you be checking out? (MM/DD/YYYY)",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query":"Planning the full trip! When should I book your return flight? (MM/DD/YYYY format, please!",
+    "slot_name": "date",
+    "slot_value": ["date_range2"]
+  },
+  {
+    "query": "Great! How many nights do you plan to stay?",
+    "slot_name": "hotel",
+    "slot_value": ["1 night", "2 nights", "3 nights"]
+  },
+  {
+    "query": "Got it! How many nights will you be staying?",
+    "slot_name": "hotel",
+    "slot_value": ["1 night", "2 nights", "3 nights"]
+  },
+  {
+    "query": "Sure! How many nights are you planning to stay?",
+    "slot_name": "hotel",
+    "slot_value": ["1 night", "2 nights", "3 nights"]
+  },
+  {
+    "query": "Awesome! How many days do you plan to stay?",
+    "slot_name": "hotel",
+    "slot_value": ["1 night", "2 nights", "3 nights"]
+  },
+  {
+    "query": "Awesome, would you like to check attractions based on your travel dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all available attractions.",
+    "slot_name": "add_date",
+    "slot_value": ["Skip", "Yes"]
+  },
+  {
+    "query": "Excellent, Do you want to see attractions for specific dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all attractions.",
+    "slot_name": "add_date",
+    "slot_value": ["Skip", "Yes"]
+  },
+  {
+    "query": "Ready to explore! Would you like to check attractions based on your travel dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all available attractions.",
+    "slot_name": "add_date",
+    "slot_value": ["Skip", "Yes"]
+  },
+  {
+    "query": "Exciting, Want to check out attractions that match your travel dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all attractions.",
+    "slot_name": "add_date",
+    "slot_value": ["Skip", "Yes"]
+  },
+  {
+    "query": "Let's get started! Would you like to see attractions for your travel dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all available attractions.",
+    "slot_name": "add_date",
+    "slot_value": ["Skip", "Yes"]
+  },
+  {
+    "query": "Got it! Could you tell me where you're flying from and where you're flying to? What's your departure city",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+  
+  {
+    "query": "Got it! Could you tell me where you're flying from and where you're flying to? What's your departure city",
+    "slot_name": "city",
+    "slot_value": ["city"]
+  },
+ 
+  {
+    "query": " Got it! Now, where's your next stop on the map?",
+    "slot_name":"city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "What's your departure city?",
+    "slot_name":"city",
+    "slot_value": ["city"]
+  }
+,
+  {
+    "query": "Exciting!, Where's your next adventure taking you?",
+    "slot_name":"city",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Hello, Explorer! Looking for travel tips or destination ideas? I'm here to help you plan the perfect trip!",
+    "slot_name": "greeting",
+    "slot_value": ["I want to book a flight from Chennai to New York", "Book a hotel", "Book an attraction", "Book a flight","Packages in bali"]
+  },
+  {
+    "query": "Sure! Could you tell me which city you're planning to stay in? And I'll find the best options for you!",
+    "slot_name": "hotel",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Great choice! Let's find the best attractions for you. Tell me a bit about what you're looking for Great! Which city would you like to discover?",
+    "slot_name": "hotel",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Fantastic!, Where do you want to fly to? Let's make it happen!",
+    "slot_name": "hotel",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Let's map out your journey! Where do you want to go?",
+    "slot_name": "hotel",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Awesome!, What's your dream destination? Let's get you there!",
+    "slot_name": "hotel",
+    "slot_value": ["city"]
+  },
+  {
+    "query": "Let's plan an amazing package experience! To begin, may I know your travel destination?",
+    "slot_name": "Package",
+    "slot_value": ["packages_cities"]
+  },
+  {
+    "query": "Awesome! I'll help you find the right package. To start off, where would you love to go?",
+    "slot_name": "Package",
+    "slot_value":  ["packages_cities"]
+  },
+  {
+    "query": "Let's get started on your package plan! Where would you love to go?",
+    "slot_name": "Package",
+    "slot_value":  ["packages_cities"]
+  },
+  {
+    "query": "I'm excited to help you discover great packages! To begin, may I know your travel destination?",
+    "slot_name": "Package",
+    "slot_value":  ["packages_cities"]
+  },
+  {
+    "query": "Let's make your trip special with the perfect package! To start off, where are you planning to go?",
+    "slot_name": "Package",
+    "slot_value":  ["packages_cities"]
+  },
+  {
+    "query": "Please enter a valid destination for the package.",
+    "slot_name": "Package",
+    "slot_value": ["packages_cities"]
+  },
+  {
+    "query": "Great! How many days do you plan to stay?",
+    "slot_name": "Package",
+    "slot_value": ["4 days", "5 days", "6 days", "8 days"]
+  },
+{
+    "query": "Awesome choice! How many days do you plan to stay there?",
+    "slot_name": "Package",
+    "slot_value": ["4 days", "5 days", "6 days", "7 days"]
+  },
+  {"query": "Could you please share the number of days you’re planning for this trip.",
+    "slot_name": "Package",
+    "slot_value": ["4 days", "5 days", "6 days", "7 days"]},
+  {
+    "query": "Got it! What's your maximum budget for this trip?",
+    "slot_name": "Package",
+    "slot_value": ["price"]
+  },
+  {
+    "query": "Thanks! Could you share your maximum budget for the trip?",
+    "slot_name": "Package",
+    "slot_value": ["price"]
+  },
+  {
+    "query": "Thanks! Could you share your preferred budget range for the trip?",
+    "slot_name": "Package",
+    "slot_value":["price"]
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "": 1,
+    "prompt": "What is the customer support mobile number for Travelfika?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 2,
+    "prompt": "Can I contact Travelfika through a mobile number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 3,
+    "prompt": "Is there a WhatsApp number for Travelfika support?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 4,
+    "prompt": "How do I reach Travelfika via phone?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 5,
+    "prompt": "Does Travelfika provide a toll-free contact number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 6,
+    "prompt": "Where can I find the official Travelfika contact number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 7,
+    "prompt": "Can I call Travelfika for booking inquiries?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 8,
+    "prompt": "What is the 24/7 helpline number for Travelfika?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 9,
+    "prompt": "How can I contact Travelfika customer service by phone?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 10,
+    "prompt": "Does Travelfika have an emergency contact number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 11,
+    "prompt": "Can I call Travelfika from outside the country?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 12,
+    "prompt": "What is the international contact number for Travelfika?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 13,
+    "prompt": "Is there a mobile app with Travelfika's contact number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 14,
+    "prompt": "Does Travelfika provide phone support for trip cancellations?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 15,
+    "prompt": "What is the quickest way to reach Travelfika by phone?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 16,
+    "prompt": "How do I verify Travelfika's customer care number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 17,
+    "prompt": "Can I speak to a Travelfika representative via phone?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 18,
+    "prompt": "Does Travelfika have a support number for urgent issues?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 19,
+    "prompt": "Is Travelfika's customer support number available 24/7?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 20,
+    "prompt": "Can I contact Travelfika's customer service via phone for a refund?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 21,
+    "prompt": "Does Travelfika offer phone support for lost bookings?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 22,
+    "prompt": "Can I call Travelfika for hotel reservation issues?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 23,
+    "prompt": "What is the phone number for Travelfika's technical support?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 24,
+    "prompt": "How can I contact Travelfika by phone for flight changes?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 25,
+    "prompt": "What is Travelfika's official phone number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 26,
+    "prompt": "Does Travelfika provide phone support for mobile app issues?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 27,
+    "prompt": "How do I request a callback from Travelfika?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 28,
+    "prompt": "Is there a way to contact Travelfika via SMS?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 29,
+    "prompt": "Can I send a message to Travelfika's customer care on WhatsApp?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 30,
+    "prompt": "Does Travelfika have a dedicated mobile support line?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 31,
+    "prompt": "What is Travelfika's customer support number for flight issues?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 32,
+    "prompt": "Can I call Travelfika for phone_number travel advice?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 33,
+    "prompt": "Is there a phone number for Travelfika's business partnerships?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 34,
+    "prompt": "Can I call Travelfika for assistance with visa applications?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 35,
+    "prompt": "Does Travelfika offer phone support for loyalty program members?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 36,
+    "prompt": "How do I contact Travelfika's support team over the phone?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 37,
+    "prompt": "Is there a separate contact number for Travelfika corporate clients?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 38,
+    "prompt": "How do I reach Travelfika's technical support team?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 39,
+    "prompt": "Does Travelfika have a dedicated number for travel insurance claims?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 40,
+    "prompt": "How do I report a fraudulent booking to Travelfika by phone?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 41,
+    "prompt": "Can I request a phone consultation with Travelfika travel advisors?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 42,
+    "prompt": "Is there a mobile number for Travelfika's premium users?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 43,
+    "prompt": "Can I talk to a live agent at Travelfika via phone?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 44,
+    "prompt": "Does Travelfika have a separate phone number for different regions?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 45,
+    "prompt": "How do I verify the authenticity of a Travelfika phone number?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 46,
+    "prompt": "What is the phone number for Travelfika’s complaints department?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 47,
+    "prompt": "Does Travelfika have a dedicated customer support line for VIP clients?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 48,
+    "prompt": "Is Travelfika's phone support available in multiple languages?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 49,
+    "prompt": "Can I call Travelfika for assistance with group bookings?",
+    "patterns": "phone_number"
+  },
+  {
+    "": 50,
+    "prompt": "What is Travelfika’s phone number for last-minute travel changes?",
+    "patterns": "phone_number"
+  }
+]

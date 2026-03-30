@@ -1,0 +1,434 @@
+{
+    "intents": [
+           {
+               "tag": "TF",
+               "patterns": ["Travelfika", "Travelfika"],
+               "responses": ["Welcome to Travelfika!  We're here to make travel planning effortless with our cutting-edge technology. Whether you're dreaming of a quick getaway or an epic adventure, we simplify the journey so you can focus on making memories!"],
+               "context": [""]
+           },
+           {
+               "tag": "greeting",
+               "patterns": ["Hello", "Hi", "Hey","hii"],
+               "responses": ["Hello, Explorer! Looking for travel tips or destination ideas? I'm here to help you plan the perfect trip!"],
+               "context": [""]
+           },
+           {
+            "tag": "thanking",
+            "patterns": ["Thank", "Thanks you"],
+            "responses": ["Anytime! \uD83D\uDE0A If you have more travel questions, just ask, I'm always here to help. Happy travels!"],
+            "context": [""]
+        }
+        ,
+           {
+               "tag": "book_flight",
+               "patterns": ["Book the flight", "Book my flight ticket", "Reserve a flight","flight"],
+               "responses": ["Sure thing!, Let's get started-just share the details, and I'll handle the rest. \u2708\uFE0F.<br><br>",
+                             "Absolutely!, Tell me what you need, and I'll help you book the perfect flight. \uD83D\uDEEB.<br><br>",
+                             "Of course!, I've got you covered. Let's sort out the details together. \uD83D\uDE0A.<br><br>",
+                             "Certainly!, Let's find the best flight options for you-just share the details! \uD83C\uDF9F\uFE0F.<br><br>",
+                             "Definitely!, Ready to take off? \uD83D\uDE80 Let's get your booking sorted.<br><br>",
+                             "Happy to help!, Let's look at your options and find the best flight for you. \uD83C\uDF0D.<br><br>"],
+                "required_fields": [
+                {
+                    "field": "origin",
+                    "softeners": ["Great!, Where are you starting your journey from?",
+                                 "Awesome!, Which city will you be flying out from?",
+                                 "Awesome!, What's your departure city?",
+                                 "Tell me where you're starting from and I'll handle the rest! \uD83D\uDE0A",
+                                 "Exciting!, Which airport or city are you departing from?"]
+                },
+                {
+                    "field": "destination",
+                    "softeners": ["Exciting!, Where's your next adventure taking you?",
+                                  "Awesome!, What's your dream destination? Let's get you there!",
+                                  "Fantastic!, Where do you want to fly to? Let's make it happen!",
+                                  "Got it! Now, where's your next stop on the map?",
+                                  "Tell me your dream destination and I'll help you get there!",
+                                  "Let's map out your journey! Where do you want to go?"]
+                },
+                {
+                    "field": "journeytype",
+                    "softeners": ["Great!, Are you booking a one-way trip or a round trip?",
+                                 "Got it!, Will this be a one-way journey or a roundtrip adventure? " ,
+                                 "Awesome!, Do you need a one-way ticket or a round trip? Let me know! \uD83D\uDE0A ",
+                                 "Let's sort this out! Are you flying one-way or roundtrip?",
+                                 "Exciting!, Will this be a one-way escape or a roundtrip journey?"]
+                },
+                {
+                    "field": "class_type",
+                    "softeners": ["Got it!, Which travel class suits you best - economy, premium, business, or first class?", 
+                                  "Understood!, Would you like to fly economy, premium, business, or first class? \uD83D\uDE0A ",
+                                  "Great choice!, Now, which class do you prefer - economy, premium, business, or first?",
+                                  "Let's make your journey comfortable!, Which class would you like - economy, premium, business, or first? ",
+                                  "Almost there!, Pick your preferred class: economy, premium, business, or first class. "]
+                },
+                {
+                    "field": "departure_date",
+                    "softeners": ["Great! When are you planning to take off? Please use MM/DD/YYYY format.",
+                                  "Sure! What's your departure date? Let's keep it in MM/DD/YYYY format.",
+                                  "Got it! Which date should I book your flight for? (Format: MM/DD/YYYY) \uD83D\uDCC5",
+                                  "Alright! When would you like to fly? Just drop the date in MM/DD/YYYY format. \uD83D\uDE0A",
+                                  "Let's lock in your flight! What's your departure date? (MM/DD/YYYY format, please!)"]
+                },
+                {
+                    "field": "return_date",
+                    "softeners": ["Got it! When are you planning to return? \uD83D\uDCC5 Please use MM/DD/YYYY format.",
+                                  "Great! What's your return date? Let's keep it in MM/DD/YYYY format.", 
+                                  "Understood! When would you like to fly back? (Format: MM/DD/YYYY) \uD83D\uDE0A ." ,
+                                  "Awesome! Let's lock in your return date. Just drop it in MM/DD/YYYY format.", 
+                                  "Planning the full trip! When should I book your return flight? (MM/DD/YYYY format, please!"]
+                }
+                
+                ],
+               "round_trip_final_msg" : [
+                    "Thank you for your request! Here are your flight details:\n\nOrigin: {origin}\nDestination: {destination}\nTrip Type: Roundtrip\nClass Type: {class_type}\nDeparture Date: {departure_date}\nReturn Date: {return_date}\n\nWishing you a fantastic journey and happy travels! \u2708\uD83C\uDF0D",
+                    "Your flight details are all set! \uD83C\uDF9F\uFE0F\n\nOrigin: {origin}\nDestination: {destination}\nTrip Type: Roundtrip\nClass Type: {class_type}\nDeparture Date: {departure_date}\nReturn Date: {return_date}\n\nGet ready for an amazing adventure ahead! \uD83D\uDE80",
+                    "Here's your flight itinerary!\n\nOrigin: {origin}\nDestination: {destination}\nTrip Type: Roundtrip\nClass Type: {class_type}\nDeparture Date: {departure_date}\nReturn Date: {return_date}\n\nHope you have a smooth flight and a delightful trip! \uD83C\uDF0D\uD83D\uDE0A",
+                    "Your travel details are confirmed! \uD83D\uDCC5\u2708\n\nOrigin: {origin}\nDestination: {destination}\nTrip Type: Roundtrip\nClass Type: {class_type}\nDeparture Date: {departure_date}\nReturn Date: {return_date}\n\nHave an unforgettable journey and enjoy every moment! \uD83C\uDF89",
+                    "You're all set! Here's your flight info:\n\nOrigin: {origin}\nDestination: {destination}\nTrip Type: Roundtrip\nClass Type: {class_type}\nDeparture Date: {departure_date}\nReturn Date: {return_date}\n\nWishing you smooth travels and incredible experiences ahead! \uD83C\uDF0E\u2728"
+                    ],
+
+               "one_way_final_msg" : [
+                "Thank you for your request! Here are your flight details:\n\n Origin: {origin}\n Destination: {destination}\n Trip Type: One Way\n Class Type: {class_type}\n Departure Date: {departure_date}\n\n Wishing you a fantastic journey and wonderful travels! \u2708\ufe0f \ud83c\udf0d",
+                "Your flight details are all set! \ud83c\udf9f\n\n Origin: {origin}\n Destination: {destination}\n Trip Type: One Way\n Class Type: {class_type}\n Departure Date: {departure_date}\n\n Get ready for an exciting adventure ahead! \ud83d\ude80",
+                "Here's what I've got for your trip:\n\n Origin: {origin}\n Destination: {destination}\n Trip Type: One Way\n Class Type: {class_type}\n Departure Date: {departure_date}\n\n Hope your journey is filled with amazing experiences! \ud83c\udf0d\ud83d\ude0a",
+                "Your travel details are confirmed! \ud83d\udcc5\u2708\ufe0f\n\n Origin: {origin}\n Destination: {destination}\n Trip Type: One Way\n Class Type: {class_type}\n Departure Date: {departure_date}\n\n Have an unforgettable journey and enjoy every moment! \ud83c\udf89",
+                "You're all set! Here's your flight info:\n\n Origin: {origin}\n Destination: {destination}\n Trip Type: One Way\n Class Type: {class_type}\n Departure Date: {departure_date}\n\n Wishing you smooth travels and incredible experiences ahead! \ud83c\udf0e\u2728"
+            ]
+            
+            
+
+           },
+           {
+            "tag": "ticket_refund",
+            "patterns": ["cancel_booking", "cancel_my_ticket", "cancel_ticket","ticket_cancellation"],
+            "responses": [
+                "No worries! Here's what you can do:<br><br>&#8226Check your booking confirmation email for details on cancellations.<br>&#8226 To cancel your booking directly, call 855-650-3452.<br>&#8226 Prefer email? Just use the contact details in your confirmation email.<br><br> Let us know if you need further help! \ud83d\ude0a"
+            ]
+            ,
+            "context": [""]
+        },
+        
+        {
+            "tag": "baggage_allowance",
+            "patterns": ["Baggage_allowance", "Baggage_rules"],
+            "responses": [
+                "Wondering about baggage allowance? \ud83e\uddf3 You can find all the details on the Trip-summary page of your booking.<br><br>Still have questions? Feel free to reach out!"
+            ]
+            },
+        {
+            "tag": "membership",
+            "patterns": ["membership", " membership?","Membership"," membership"],
+            "responses": ["We offer yearly plans for both Blue and Gold memberships. To know further details, please visit the account page and click the Become a VIP button."],
+            "context": [""]
+        },
+        {
+            "tag": "monthly_plans",
+            "patterns": ["monthly_plans_available?", "monthly_plans?"],
+            "responses": [
+                "At the moment, we offer only yearly plans for both Blue and Gold memberships.<br><br>Let us know if you'd like more details! \ud83d\ude0a"
+            ]
+            ,
+            "context": [""]
+        },
+        {
+            "tag": "switch_membership",
+            "patterns": ["switch between Blue and Gold memberships?", "Switch membership options"],
+            "responses": [
+                "Want to switch between Blue and Gold? You can upgrade or downgrade your membership on a yearly basis.<br><br>Reach out if you need assistance with your plan! \ud83c\udf1f"
+            ]
+            ,
+            "context": [""]
+        },
+        {
+            "tag": "payment_security",
+            "patterns": ["Is my payment information safe?", "How secure is my payment?", "Payment security"],
+            "responses": [
+                "Your payment security is our top priority at Travelfika! \ud83d\udd12<br>We use industry-standard encryption and secure payment methods to protect your information, ensuring your data stays safe and confidential.<br>Book with confidence!\ud83d\ude0a"
+            ]
+            ,
+            "context": [""]
+        },
+        {
+            "tag": "flight_alerts",
+            "patterns": ["cheap flight alerts?", "flight alerts?", "Cheap flight alerts"],
+            
+                "responses": [
+                    "Stay ahead with exclusive flight alerts from top airlines!<br>Join Travelfika and get:<br>\u2705 The best flight deals delivered straight to your inbox.<br>\u2705 Savings on airfare to make your travels more affordable.<br>Don't miss out-sign up today!"
+                ]
+          
+            
+            ,
+            "context": [""]
+        },
+           {   "tag": "book_hotel",
+               "patterns":["to book  hotel  {city}?","book hotel","hotels?","stay {city}","livein","accommodation"],
+               "responses":["Sure! I'd love to help you find the perfect hotel. Let's get into the details.<br><br>", 
+                            "Absolutely! Let's book the ideal stay for you. We'll go over the details now.<br><br>",
+                            "Of course! I'm here to make your hotel booking easy. Let's sort out the specifics.<br><br>",
+                            "Certainly! Let's find you a great place to stay. Just a few details, and we'll get started.<br><br>",
+                            "Definitely! I'll help you book a hotel that fits your needs. Let's dive into the details.<br><br>", 
+                            "Happy to assist! Let's find you the perfect accommodation. Just share a few details to get started.<br><br>" ],
+                "required_fields": [
+                {
+                    "field": "city_name",
+                    "softeners": ["Tell me which city you're heading to and I'll find you a comfortable and convenient place to stay!Where are you thinking of staying? Let me know the city, and I'll find the best options for you!"]
+                },
+                {
+                    "field": "checkin_date",
+                    "softeners": ["Exciting! When will you be checking in? Let's get your stay sorted. (MM/DD/YYYY).",
+                                  "Can't wait to find you the perfect stay! What's your check-in date? (MM/DD/YYYY).", 
+                                  "Ready to settle in? Let me know when you'll be checking in. (MM/DD/YYYY).",
+                                  "Let's lock in your stay! What date will you be arriving? (MM/DD/YYYY)." ]
+                },
+                {
+                    "field": "checkout_date",
+                    "softeners": ["Alright! When will you be checking out? (MM/DD/YYYY)",
+                                  "Got it! What's your check-out date? (MM/DD/YYYY)", 
+                                  "Wrapping up your stay? Let me know your check-out date. (MM/DD/YYYY)", 
+                                  "Let's finalize your booking! When are you checking out? (MM/DD/YYYY)",
+                                  "Just one more step! What date will you be checking out? (MM/DD/YYYY)"
+
+]
+                }
+                ],
+                "book_hotel_final_msg" : [
+                       "Thank you for your request! Here are the details of your stay:\n\n City: {city} \nCheck-in Date{checkin_date} \nCheck-out Date: {checkout_date}\n\n You've chosen a fantastic spot-wishing you a wonderful and comfortable stay!", 
+                       "Your hotel details are all set! \n\nCity: {city}\nCheck-in Date: {checkin_date}\nCheck-out Date: {checkout_date}\n\n{city} is such a beautiful destination! Hope you have a relaxing and memorable stay.",
+                       "Here's what I've got for your stay:\n\nCity: {city}\n Check-in Date: {checkin_date}\nCheck-out Date: {checkout_date}\n\n{city} is an incredible place! Enjoy every moment and make wonderful memories.",
+                        "We've got your hotel details ready:\n\nCity: {city}\n Check-in Date: {checkin_date}\nCheck-outDate: {checkout_date}\n\n You've picked a great place-have a fantastic stay and enjoy your trip!"
+                    ],
+               "context":[""]
+           },
+   
+           {   "tag": "attractions",
+               "patterns":["book the attractions?","attractions","attractions","explore","experiences","see attractions","show attractions.<br><br>"],
+               "responses":["Great choice! Let's find the best attractions for you. Tell me a bit about what you're looking for!<br><br>",
+               "Awesome! I'll help you explore some must-visit spots. Let's start with a few details.<br><br>", 
+               "Let's plan an amazing experience! I'll guide you to top attractions-just need a few details to begin.<br><br>", 
+               "Excited to help you discover incredible attractions! Share some details, and we'll find the perfect spots for you.<br><br>", 
+               "Let's make your trip unforgettable! I'll find the best attractions-just let me know what you're interested in.<br><br>"] ,
+                "required_fields": [
+                {
+                    "field": "city_name",
+                    "softeners": [
+                        "I'd love to help! Which city are you planning to explore? \uD83C\uDF0D",
+                        "Could you share the name of the city you're visiting?",
+                        "Where are you headed? Let me know the city name!",
+                        "Great! Which city would you like to discover? \uD83C\uDF1F"
+                    ]
+                },
+                {
+                    "field": "skip_dates",
+                    "softeners": ["Awesome, would you like to check attractions based on your travel dates?<br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all available attractions.",
+                                  "Excellent, Do you want to see attractions for specific dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all available attractions.",
+                                  "Fantastic, would you like to view the attractions for specific dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all available attractions.",
+                                  "Wonderful, would you prefer to search for attractions during certain dates? <br><br>Please type:<br>'Yes' to enter your travel dates.<br>'Skip' to explore all available attractions."]
+                },
+                {
+                    "field": "checkin_date",
+                    "softeners": ["Sure! From what date should I start finding available attractions for you? Preferred date format is MM/DD/YYYY" ,
+                    "Got it! When would you like to begin exploring attractions?  Preferred date format is MM/DD/YYYY.",
+                    "Alright! What's the start date for checking attraction availability? Preferred date format is MM/DD/YYYY. "]
+                },
+                {
+                    "field": "checkout_date",
+                    "softeners": ["Understood! Until what date should I search for available attractions? Preferred date format is MM/DD/YYYY. ",
+                    "Got it! What's the end date for your attraction search?  Preferred date format is MM/DD/YYYY. ",
+                    "Alright! How long do you want to keep discovering amazing places? Let me know the last date! Preferred date format is MM/DD/YYYY. "]
+                }
+                ],
+            "attractions_final_msg" : [
+                "Get ready for an adventure! I've selected some of the most fascinating attractions for you. Dive into the excitement and explore these incredible spots! \uD83C\uDFDB\uFE0F\uD83C\uDF0D",
+                "Must-visit alert! This handpicked selection of top attractions will guide you through the city's most exciting experiences. Start exploring and make unforgettable memories! \uD83D\uDE80\uD83C\uDFD9\uFE0F",
+                "Experience the city's charm! Here's a carefully curated list of attractions that truly capture the essence of this destination. Discover, explore, and enjoy every moment! \uD83C\uDF89\uD83C\uDFAD",
+                "Your adventure starts here! I've lined up some fantastic attractions for you. Get ready to explore the most iconic and hidden gems of this amazing city! \uD83C\uDFDE\uFE0F\uD83C\uDF1F",
+                "Discover the best of the city! Here's a curated selection of attractions that showcase the top experiences this destination has to offer. Get inspired and start your journey! \uD83C\uDF0D\u2728"
+            ],
+            
+                "context":[""]
+           },           
+           {
+             "tag": "manual_flight",
+             "patterns": ["search_flight"],
+             "responses": ["flight_result"],
+             "context": [""]
+           },
+           { "tag": "manual_hotel",
+              "patterns": ["search_hotel"],
+              "responses": ["hotel_result"],
+              "context": [""]
+           },
+            { "tag": "manual_attractions",
+            "patterns": ["search_attractions"],
+            "responses": ["attractions_result"],
+            "context": [""]
+            },
+            { "tag": "nearby_hotels",
+              "patterns": ["nearby_hotels"],
+              "responses": ["attractions_result"],
+              "context": [""]
+            },
+            { "tag": "nearby_attractions",
+              "patterns": ["nearby_attractions"],
+              "responses": ["attractions_result"],
+              "context": [""]
+            },
+            {
+                "tag": "reschedule",
+                "patterns": ["Reschedule my booking", "Change my booking", "Modify my booking"],
+                "responses": ["Need to reschedule your booking? No worries! Just call us at 855-650-3452 or check your confirmation email for contact details to send us an email. We're here to help! \uD83D\uDE0A"],
+                "context": [""]
+            },
+            {
+                "tag": "unique_features",
+                "patterns": ["What unique features does your website offer?", "What makes your website different?", "Why should I use your website?"],
+                "responses": [" Planning a trip has never been easier! With Travelfika, you can book flights, reserve hotels, and plan attractions-all in one seamless itinerary. No more juggling multiple bookings-everything is in one place for a stress-free travel experience!"],
+                "context": [""]
+            },
+            {
+                "tag": "mobile_app",
+                "patterns": ["mobile app?", "Travelfika app?", "Mobile app"],
+                "responses": ["Yes! \uD83D\uDCF1\uD83C\uDF89 The Travelfika app lets you book and manage your trips effortlessly. Available on both the App Store and Google Play Store, it's your all-in-one travel companion. Download now and plan your next adventure with ease!"],
+                "context": [""]
+            },
+            {
+                "tag": "payment_methods",
+                "patterns": [
+                  "What payment methods do you accept?",
+                  "Can I pay using UPI?",
+                  "Do you accept debit cards?",
+                  "What are the payment options in India and the US?"
+                ],
+                "responses": [
+                  "We accept multiple payment methods to make things easy for you!\uD83D\uDCB3<br><br>\u2705 In India: Credit Card, Debit Card, Netbanking, and UPI.<br><br>\u2705 In US: Credit Card and Debit Card.<br><br>\u26a0\ufe0f Currently, we do not accept crypto payments or EMI options, but we plan to add these options in the future."
+
+
+
+                ]
+              }
+              ,
+            {
+                "tag": "travel_insurance",
+                "patterns": ["travel insurance?", "Is travel insurance available?", "travel insurance with my booking?"],
+                "responses": ["Currently, we don't offer travel insurance with our bookings. However, if you have any other questions or need assistance with your trip, just let us know-we're happy to help!"],
+                "context": [""]
+            },
+            {"tag": "packages",
+                "patterns": ["available pacakges", "Is any travel travel packages available?","packages"],
+                "responses": ["Great choice! Let's find the best packages for you. Tell me a bit about what you're looking for!<br><br>",
+                "Awesome! I'll help you explore some must-visit spots. Let's start with a few details.<br><br>", 
+                "Let's plan an amazing experience! I'll guide you to top attractions-just need a few details to begin.<br><br>", 
+                "Excited to help you discover incredible attractions! Share some details, and we'll find the perfect spots for you.<br><br>", 
+                "Let's make your trip unforgettable! I'll find the best attractions-just let me know what you're interested in.<br><br>"],
+                "context": [""]
+            },{
+                "tag": "about_travelfika",
+                "patterns": ["What is Travelfika?", "Tell me about Travelfika", "What do you do?"],
+                "responses": ["Travelfika is a travel agency that helps you book flights, hotels, attractions, and complete travel packages."]
+              },
+              {
+                "tag": "services",
+                "patterns": ["What services do you offer?", "Do you provide flight booking?", "Can I book hotels with Travelfika?"],
+                "responses": ["We\u2019ve got you covered! \u2708\ufe0f\ud83c\udfe8 From flight bookings and hotel reservations to attraction tickets, group tours, destination weddings, and corporate travel planning\u2014we make your trips seamless and unforgettable! \ud83c\udf89\ud83c\udf0d"]
+              },
+              {
+                "tag": "iata_accreditation",
+                "patterns": ["Are you IATA accredited?", "Is Travelfika an IATA agency?", "Do you have IATA certification?"],
+                "responses": ["We are in the process of obtaining IATA accreditation in India. Stay tuned for updates!"]
+              },
+              {
+                "tag": "multilingual_support",
+                "patterns": ["Do you support multiple languages?", "Can I talk to the chatbot in Spanish?", "Is there multilingual support?"],
+                "responses": ["We are in the process of supporting multiple languages to assist travelers from around the world."]
+              },
+              {
+                "tag": "company_location_contact",
+                "patterns": [
+                  "Where is Travelfika located?",
+                  "How can I contact Travelfika?",
+                  "Do you have a customer support number?"
+    
+                ],
+                "responses": [
+                   "Travelfika is a legally registered travel company, operating from both the USA and India \uD83C\uDF0D. We proudly serve travelers all over the world with 24/7 customer support!<br><br>\uD83D\uDCDE Customer Support: IND: +91 9629929970 | USA: +1 (855) 650-3452 <br>\uD83D\uDCAC Chat with us on WhatsApp: <a href=\"https://wa.me/918925872980\" target=\"_blank\" style=\"color: blue;\"><strong>Click here</strong></a> <br>\u2709\uFE0F Email us: support@travelfika.com"
+
+                 
+                   ]
+    
+          
+    }   ,
+    {
+  "tag": "booking_policies",
+  "patterns": [
+    "What is Travelfika’s cancellation policy?",
+    "Do you offer refunds?",
+    "How can I modify my booking?"
+  ],
+  "responses": [
+    "We get it-plans change! \uD83D\uDEEB Our cancellation and refund policies depend on the service provider. Check your booking details or reach out to our support team for assistance."
+  ]
+},
+  {
+    "tag": "social_media",
+    "patterns": [
+      "Where can I find Travelfika on social media?",
+      "What are your social media handles?",
+      "Do you have an Instagram page?",
+      "Do you have a YouTube channel?"
+    ],
+    "responses": [
+      
+       "Stay connected with us! \uD83C\uDF0D\u2728\n\uD83D\uDCF8 <a href=\"https://www.instagram.com/travelfika/?hl=en\" target=\"_blank\" style=\"color:blue;\"><strong>Instagram</strong></a>\n\uD83D\uDCDA <a href=\"https://www.facebook.com/travelfika/\" target=\"_blank\" style=\"color:blue;\"><strong>Facebook</strong></a>\n\u25B6\uFE0F <a href=\"https://www.youtube.com/@travelfika\" target=\"_blank\" style=\"color:blue;\"><strong>YouTube</strong></a><br>Follow us for travel inspiration, exclusive deals, videos and more! \uD83D\uDE80<br><br>Want the latest updates and travel tips straight to your inbox? Subscribe to our newsletter on our website !"
+   
+      
+    ]
+  },
+  {
+    "tag": "special_offers_and_gifting",
+    "patterns": [
+      "Do you have any current offers?",
+      "Any discounts available?",
+      "Do you offer gift cards?",
+      "Can I get a travel voucher?",
+      "Any promotional deals?",
+      "Is there a way to gift a trip?",
+      "Do you have any deals going on?",
+      "Can I send someone a travel gift?"
+    ],
+    "responses": [
+      "We love making travel more exciting! \ud83c\udf89 Travelfika occasionally shares special offers, limited-time deals, and gift vouchers you can share with your loved ones. Keep an eye on our website and social media for the latest updates!"
+    ]
+  },{
+    "tag": "ai_features",
+    "patterns": [
+      "Do you use AI?",
+      "Is Travelfika powered by AI?",
+      "Tell me about your AI chatbot",
+      "How does your smart planner work?",
+      "What AI features do you have?",
+      "Do you have an intelligent assistant?",
+      "What is your AI trip planner?"
+    ],
+    "responses": [
+      "Absolutely! \ud83e\udd16 Travelfika uses AI to make your travel planning effortless. Our AI-powered Trip Planner curates personalized itineraries based on your interests, and our chatbot Anah is here 24/7 to assist with bookings, questions, and travel tips. Smart, simple, and stress-free!"
+    ]
+  }
+  ,{
+    "tag": "company_reputation_reviews",
+    "patterns": [
+      "Is Travelfika a trusted travel agency?",
+      "Where can I find Travelfika reviews?"
+    ],
+    "responses": [
+       "You're in good hands! \uD83D\uDE0A Travelfika is a trusted travel agency serving happy travelers across the globe.<br><br>Explore our customer reviews and stay inspired by following us on social media:<br>\uD83D\uDCF8 Instagram: <a href=\"https://instagram.com/travelfika\" style=\"color:blue\">Instagram</a><br>\uD83D\uDCDA Facebook: <a href=\"https://facebook.com/travelfika\" style=\"color:blue\">Facebook</a><br>\u2B50 Google Reviews: <a href=\"https://g.co/kgs/9FjQbB4\" style=\"color:blue\">Google Reviews</a>"
+      
+       ]
+  }
+  
+  
+  
+
+       ]
+   }
+   
